@@ -1,7 +1,8 @@
 :root {
   --color-primary: hsl(322, 100%, 66%);
   --color-dark: hsl(192, 100%, 9%);
-  --color-light: hsl(207, 100%, 98%); }
+  --color-light: hsl(207, 100%, 98%);
+  --color-white: #fff; }
 
 *,
 *::after,
@@ -14,14 +15,47 @@ html {
   font-size: 50%;
   box-sizing: border-box; }
 
+.mt-sm {
+  margin-top: 2rem !important; }
+
+.mt-md {
+  margin-top: 6rem !important; }
+
+.mt-lg {
+  margin-top: 8rem !important; }
+
+.p-md {
+  padding: 0 3rem !important; }
+
 body {
-  font-family: "Open Sans", sans-serif;
-  font-size: 1.6rem; }
+  font-family: "Open Sans", sans-serif; }
 
 .heading-primary {
   font-family: "Poppins", sans-serif;
   color: var(--color-dark);
+  text-align: center;
+  font-size: 3rem; }
+
+.paragraph {
+  color: var(--color-dark);
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.6rem; }
+
+.btn:link, .btn:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  margin: 0 auto;
+  display: block;
+  width: 25rem;
   text-align: center; }
+
+.btn--cta {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: 1rem 2rem;
+  border-radius: 100px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15); }
 
 .container {
   max-width: 144rem;
