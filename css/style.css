@@ -24,6 +24,9 @@ html {
 .mt-lg {
   margin-top: 8rem !important; }
 
+.mt-xl {
+  margin-top: 12rem !important; }
+
 .p-md {
   padding: 0 3rem !important; }
 
@@ -87,3 +90,20 @@ body {
 .header__cta:hover {
   background-color: var(--color-primary);
   color: #fff; }
+
+.section-info .info {
+  padding: 0 4rem; }
+  .section-info .info__img {
+    width: 100%; }
+  .section-info .info__cards {
+    color: var(--color-dark);
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .section-info .info__icon {
+    width: 2.5rem; }
+  .section-info .info__main-text {
+    font-size: 6.8rem;
+    font-weight: 700; }
+  .section-info .info__text {
+    color: #ccc; }
