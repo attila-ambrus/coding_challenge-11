@@ -1,0 +1,19 @@
+.section {
+    background-color: var(--color-light);
+    margin-top: -1rem;
+    &--white {
+        background-color: #fff !important;
+    }
+    &__img-box {
+        padding: 12rem 6rem;
+    }
+    &__img {
+        width: 100%;
+    }
+    &__text-box {
+        padding: 0 4rem;
+    }
+    &__text {
+        padding-bottom: 6rem;
+    }
+}

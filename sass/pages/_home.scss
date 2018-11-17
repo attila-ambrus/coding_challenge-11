@@ -22,3 +22,9 @@
         }
     }
 }
+.section-grow-together {
+    .section-top,
+    .section-bottom {
+        width: 100%;
+    }
+}
