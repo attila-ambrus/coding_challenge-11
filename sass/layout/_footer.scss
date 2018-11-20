@@ -1,0 +1,51 @@
+.footer {
+    margin-top: 23rem;
+    &__top {
+        width: 100%;
+    }
+    &__body {
+        margin-top: -1rem;
+        background-color: var(--color-dark);
+    }
+}
+.newsletter {
+    &__heading, 
+    &__text {
+        color: #fff;
+        text-align: left;
+        font-weight: 400;
+    }
+
+}
+.information {
+    &__logo-box {
+        width: 60%;
+    }
+    &__logo {
+        width: 100%;
+    }
+    &__text {
+        text-align: left;
+    }
+    &__contact {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    &__contact-text {
+        text-align: left;
+        padding-left: 3rem;
+        font-weight: 200;
+    }
+    &__smedia-link:link,
+    &__smedia-link:visited {
+        text-decoration: none;
+        color: var(--color-white);
+        display: inline-block;
+        margin-right: 3rem;
+        transition: all .3s ease;
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+}

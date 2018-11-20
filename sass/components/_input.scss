@@ -1,0 +1,14 @@
+.input {
+    width: 100%;
+    padding: 2rem 1rem;
+    border: none;
+    border-bottom: 4px solid transparent;
+    border-radius: 10px;
+    outline: none;
+    transition: all .2s ease-in;
+    font: inherit;
+    font-size: 1.6rem;
+    &:focus {
+        border-bottom: 4px solid var(--color-primary);
+    }
+}

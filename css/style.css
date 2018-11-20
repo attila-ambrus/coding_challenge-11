@@ -27,6 +27,9 @@ html {
 .mt-xl {
   margin-top: 12rem !important; }
 
+.p-sm {
+  padding: 0 2rem !important; }
+
 .p-md {
   padding: 0 3rem !important; }
 
@@ -65,6 +68,8 @@ body {
   text-align: center;
   font-weight: 600;
   font-size: 1.6rem; }
+  .paragraph--white {
+    color: var(--color-white); }
 
 .btn:link, .btn:visited {
   text-decoration: none;
@@ -74,12 +79,20 @@ body {
   width: 25rem;
   text-align: center; }
 
-.btn--cta {
+.btn--cta, .btn--submit {
   background-color: var(--color-primary);
   color: var(--color-white);
   padding: 1rem 2rem;
   border-radius: 100px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15); }
+
+.btn--submit {
+  border: none;
+  width: 50%;
+  border-radius: 10px;
+  padding: 2rem 2rem;
+  display: block;
+  margin-left: auto; }
 
 .section {
   background-color: var(--color-light);
@@ -95,9 +108,22 @@ body {
   .section__text {
     padding-bottom: 6rem; }
 
+.input {
+  width: 100%;
+  padding: 2rem 1rem;
+  border: none;
+  border-bottom: 4px solid transparent;
+  border-radius: 10px;
+  outline: none;
+  transition: all .2s ease-in;
+  font: inherit;
+  font-size: 1.6rem; }
+  .input:focus {
+    border-bottom: 4px solid var(--color-primary); }
+
 .container {
   max-width: 144rem;
-  padding: 3rem;
+  padding: 4rem;
   margin: 0 auto; }
 
 .header__nav {
@@ -125,6 +151,47 @@ body {
 .header__cta:hover {
   background-color: var(--color-primary);
   color: #fff; }
+
+.footer {
+  margin-top: 23rem; }
+  .footer__top {
+    width: 100%; }
+  .footer__body {
+    margin-top: -1rem;
+    background-color: var(--color-dark); }
+
+.newsletter__heading, .newsletter__text {
+  color: #fff;
+  text-align: left;
+  font-weight: 400; }
+
+.information__logo-box {
+  width: 60%; }
+
+.information__logo {
+  width: 100%; }
+
+.information__text {
+  text-align: left; }
+
+.information__contact {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; }
+
+.information__contact-text {
+  text-align: left;
+  padding-left: 3rem;
+  font-weight: 200; }
+
+.information__smedia-link:link, .information__smedia-link:visited {
+  text-decoration: none;
+  color: var(--color-white);
+  display: inline-block;
+  margin-right: 3rem;
+  transition: all .3s ease; }
+  .information__smedia-link:link:hover, .information__smedia-link:visited:hover {
+    transform: scale(1.2); }
 
 .section-info .info {
   padding: 0 4rem; }
