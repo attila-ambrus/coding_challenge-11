@@ -1,6 +1,15 @@
 .section {
     background-color: var(--color-light);
     margin-top: -1rem;
+    &__content {
+        @include respond(desktop) {
+            display: flex;
+            align-items: center;
+            width: 90%;
+            max-width: 144rem;
+            margin: -1rem auto 0 auto;
+        }
+    }
     &--white {
         background-color: #fff !important;
     }
@@ -15,5 +24,8 @@
     }
     &__text {
         padding-bottom: 6rem;
+        @include respond(desktop) {
+            text-align: left;
+        }
     }
 }

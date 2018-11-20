@@ -7,19 +7,42 @@
         margin-top: -1rem;
         background-color: var(--color-dark);
     }
+    &__content {
+        @include respond(desktop) {
+            display: flex;
+            justify-content: space-between;
+            width: 90%;
+        }
+    }
 }
 .newsletter {
+    @include respond(desktop) {
+        width: 45%;
+    }
     &__heading, 
     &__text {
         color: #fff;
         text-align: left;
-        font-weight: 400;
+        font-weight: 200;
+    }
+    &__form {
+        @include respond(desktop) {
+            display: flex;
+            height: 5rem;
+        }
     }
 
 }
 .information {
+    @include respond(desktop) {
+        width: 30%;
+        order: -1;
+    }
     &__logo-box {
-        width: 60%;
+        width: 70%;
+        @include respond(desktop) {
+            width: 80%;
+        }
     }
     &__logo {
         width: 100%;

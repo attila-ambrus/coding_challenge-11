@@ -8,4 +8,11 @@
 html {
     font-size: 50%;
     box-sizing: border-box;
+
+    @include respond(tablet) {
+        font-size: 56.25%;
+    }
+    @include respond(desktop) {
+        font-size: 62.5%;
+    }
 }

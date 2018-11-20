@@ -9,6 +9,9 @@
     }
     &__logo-box {
         width: 12rem;
+        @include respond(desktop) {
+            width: 20rem;
+        }
     }
     &__logo {
         width: 100%;
@@ -22,6 +25,9 @@
             padding: .5rem 2rem;
             border-radius: 100px;
             transition: all .4s ease;
+            @include respond(desktop) {
+                font-size: 1.6rem;
+            }
         }
         &:hover {
             background-color: var(--color-primary);
