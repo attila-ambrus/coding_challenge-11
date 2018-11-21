@@ -29,9 +29,11 @@
         padding: 2rem 2rem;
         display: block;
         margin-left: auto;
+        margin-top: 2rem;
         @include respond(desktop) {
             margin-left: 4rem;
             height: inherit;
+            margin-top: 0;
         }
     }
 }
