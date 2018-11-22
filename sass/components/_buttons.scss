@@ -18,8 +18,15 @@
         padding: 1rem 2rem;
         border-radius: 100px;
         box-shadow: 0 5px 10px rgba(0, 0, 0, .15);
+        transition: all .3s ease-in;
         @include respond(desktop) {
             padding: 3rem 6rem;
+        }
+    }
+    &--cta {
+        &:hover {
+            transform: scale(1.1) translateY(-5px);
+            box-shadow: 0 8px 13px rgba(0, 0, 0, .15);
         }
     }
     &--submit {
@@ -30,6 +37,12 @@
         display: block;
         margin-left: auto;
         margin-top: 2rem;
+        transition: all .3s ease-in;
+        &:hover {
+            cursor: pointer;
+            background-color: #fff;
+            color: var(--color-primary);
+        }
         @include respond(desktop) {
             margin-left: 4rem;
             height: inherit;

@@ -112,10 +112,15 @@ body {
   color: var(--color-white);
   padding: 1rem 2rem;
   border-radius: 100px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15); }
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  transition: all .3s ease-in; }
   @media (min-width: 75em) {
     .btn--cta, .btn--submit {
       padding: 3rem 6rem; } }
+
+.btn--cta:hover {
+  transform: scale(1.1) translateY(-5px);
+  box-shadow: 0 8px 13px rgba(0, 0, 0, 0.15); }
 
 .btn--submit {
   border: none;
@@ -124,7 +129,12 @@ body {
   padding: 2rem 2rem;
   display: block;
   margin-left: auto;
-  margin-top: 2rem; }
+  margin-top: 2rem;
+  transition: all .3s ease-in; }
+  .btn--submit:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: var(--color-primary); }
   @media (min-width: 75em) {
     .btn--submit {
       margin-left: 4rem;
