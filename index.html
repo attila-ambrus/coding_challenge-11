@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Huddle landing page with alternating sections</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Poppins:700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="header__nav">
+        <div class="header__logo-box">
+            <img src="images/logo.svg" alt="Huddle Logo" class="header__logo">
+        </div>
+        <a href="#" class="header__cta">Try it free</a>
+      </nav>
+      <h1 class="heading heading--primary">Build The Community Your Fans Will Love</h1>
+      <div class="paragraph-box">
+        <p class="paragraph mt-sm p-sm">Huddle re-imagines the way we build communities. You have a voice, but so does 
+            your audience. Create connections with your users as you engage in genuine discussion. </p>
+      </div>
+      <a href="#" class="btn btn--cta mt-md">Get Started For Free</a>
+    </div> 
+  </header>
+  <section class="section-info mt-lg">
+    <div class="container info">
+      <div class="info__img-box">
+        <img src="images/screen-mockups.svg" alt="Screen mockup" class="info__img">
+      </div>
+      <div class="info__cards mt-xl">
+        <div class="info__card">
+          <img src="images/icon-communities.svg" alt="Icon communities" class="info__icon">
+          <p class="info__main-text">1.4k+</p>
+          <p class="info__text paragraph">Communities Formed</p>
+        </div>
+        <div class="info__card">
+          <img src="images/icon-messages.svg" alt="Icon messages" class="info__icon">
+          <p class="info__main-text">2.7m+</p>
+          <p class="info__text paragraph">Messages Sent</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-grow-together mt-md">
+    <picture>
+      <source media="(min-width: 75em)" srcset="images/bg-section-top-desktop-1.svg">
+      <img srcset="images/bg-section-top-mobile-1.svg 375w" alt="" class="section-top">
+    </picture>
+    <div class="section">
+      <div class="section__content">
+        <div class="section__img-box">
+          <img src="images/illustration-grow-together.svg" alt="Grow together illustration" class="section__img">
+        </div>
+        <div class="section__text-box">
+          <h2 class="section__title heading heading--secondary">Grow Together</h2>
+          <p class="section__text paragraph mt-sm">Generate meaningful discussions with your audience and build a strong, loyal community. 
+              Think of the insightful conversations you miss out on with a feedback form. </p>
+        </div>
+      </div>
+    </div>
+    <picture>
+      <source media="(min-width: 75em)" srcset="images/bg-section-bottom-desktop-1.svg">
+      <img src="images/bg-section-bottom-mobile-1.svg" alt="" class="section-bottom">
+    </picture>
+  </section>
+  <section class="section-flowing-conversations">
+    <div class="section section--white">
+      <div class="section__content">
+        <div class="section__img-box">
+          <img src="images/illustration-flowing-conversation.svg" alt="Grow together illustration" class="section__img">
+        </div>
+        <div class="section__text-box">
+          <h2 class="section__title heading heading--secondary">Flowing Conversations</h2>
+          <p class="section__text paragraph mt-sm pb-xl">You wouldn't paginate a conversation in real life, so why do it online? Our threads have 
+              just-in-time loading for a more natural flow.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-your-users">
+    <picture>
+      <source media="(min-width: 75em)" srcset="images/bg-section-top-desktop-2.svg">
+      <img src="images/bg-section-top-mobile-2.svg" alt="" class="section-top">
+    </picture>
+    <div class="section">
+      <div class="section__content">
+        <div class="section__img-box pt-sm">
+          <img src="images/illustration-your-users.svg" alt="Your users illustration" class="section__img">
+        </div>
+        <div class="section__text-box">
+          <h2 class="section__title heading heading--secondary">Your Users</h2>
+          <p class="section__text paragraph mt-sm pb-xl">It takes no time at all to integrate Huddle with your app's authentication solution. This means, 
+              once signed in to your app, your users can start chatting immediately.</p>
+        </div>
+      </div>
+    </div>
+    
+    <picture>
+      <source media="(min-width: 75em)" srcset="images/bg-section-bottom-desktop-2.svg">
+      <img src="images/bg-section-bottom-mobile-2.svg" alt="" class="section-bottom">
+    </picture>
+  </section>
+  <section class="section-cta mt-lg">
+    <div class="container">
+      <h1 class="heading heading--primary">Ready To Build Your Community?</h1>
+      <a href="#" class="btn btn--cta mt-md">Get Started For Free</a>
+    </div>
+  </section>
+  <footer class="footer">  
+    <picture>
+      <source media="(min-width: 75em)" srcset="images/bg-footer-top-desktop.svg">
+      <img src="images/bg-footer-top-mobile.svg" alt="" class="footer__top">
+    </picture>
+    <div class="footer__body">
+      <div class="container footer__content pb-md">
+        <div class="newsletter mt-lg">
+            <h2 class="heading heading--secondary newsletter__heading">NEWSLETTER</h2>
+            <p class="paragraph newsletter__text mt-sm">To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never send you spam or pass on your email address</p>
+            <form class="mt-md newsletter__form">
+              <input type="text" class="newsletter__input input">
+              <button type="submit" class="btn btn--submit">Subscribe</button>
+            </form>
+        </div>  
+        <div class="information">
+          <div class="information__logo-box">
+            <img src="images/logo-white.svg" alt="" class="information__logo">
+          </div>
+          <p class="paragraph paragraph--white information__text mt-sm">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia 
+            vestibulum a, ultrices quis sem.
+          </p>
+          <div class="information__contact-box mt-md">
+            <div class="information__contact">
+              <img src="images/icon-phone.svg" alt="" class="information__contact-logo">
+              <p class="paragraph paragraph--white information__contact-text">Phone: +1-543-123-4567</p>
+            </div>
+            <div class="information__contact mt-sm">
+                <img src="images/icon-email.svg" alt="" class="information__contact-logo">
+                <p class="paragraph paragraph--white information__contact-text">example@huddle.com</p>
+              </div>
+          </div>
+          <div class="information__smedia-box mt-md">
+            <a href="#" class="information__smedia-link"><i class="fab fa-facebook-square fa-4x information__smedia-icon"></i></a>
+            <a href="#" class="information__smedia-link"><i class="fab fa-instagram fa-4x information__smedia-icon"></i></a>
+            <a href="#" class="information__smedia-link"><i class="fab fa-twitter-square fa-4x information__smedia-icon"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <aside>
+    <p class="attribution">
+      This page started life as a challenge on <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a> 🎉
+    </p>
+  </aside>
+  <script src="scripts/app.js"></script>
+</body>
+</html>
