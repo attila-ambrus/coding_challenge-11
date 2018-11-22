@@ -8,7 +8,7 @@
         background-color: var(--color-dark);
     }
     &__content {
-        @include respond(desktop) {
+        @include respond(tablet-landscape) {
             display: flex;
             justify-content: space-between;
             width: 90%;
@@ -16,7 +16,7 @@
     }
 }
 .newsletter {
-    @include respond(desktop) {
+    @include respond(tablet-landscape) {
         width: 45%;
     }
     &__heading, 
@@ -26,21 +26,27 @@
         font-weight: 200;
     }
     &__form {
-        @include respond(desktop) {
+        @include respond(tablet-landscape) {
             display: flex;
+            flex-direction: column; 
+        }
+        @include respond(desktop) {
+            flex-direction: row;     
             height: 5rem;
         }
     }
 
 }
 .information {
-    @include respond(desktop) {
+    margin-top: 15rem;
+    @include respond(tablet-landscape) {
         width: 30%;
         order: -1;
+        margin-top: 8rem;
     }
     &__logo-box {
         width: 70%;
-        @include respond(desktop) {
+        @include respond(tablet-landscape) {
             width: 80%;
         }
     }
